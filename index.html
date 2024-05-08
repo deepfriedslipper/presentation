@@ -33,6 +33,14 @@
     <section class='slide d-none' id='slide-9'>
       Slide 9
     </section>
-    <script src='script.js'></script>
+    <script>
+      document.querySelectorAll('.slide').forEach((slide) => {
+        slide.addEventListener('click', function () {
+          slide.classList.add('d-none');
+          index = parseInt(slide.id.slice(6)) + 1;
+          document.getElementById('slide-' + index.toString()).classList.remove('d-none');
+        });
+      });
+    </script>
   </body>
 </html>
