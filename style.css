@@ -1,8 +1,12 @@
+* {
+  color: white;
+}
+
 .slide {
   width: 100vw;
   height: 100vh;
 }
 
 .bg {
-  background: radial-gradient(#2A2D43,#414361);
+  background: radial-gradient(#414361, #2A2D43);
 }
